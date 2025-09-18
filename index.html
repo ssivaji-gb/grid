@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+      
+        .grid-container {
+            width: 50%;
+            height: 500px;
+            margin: auto;
+            padding: 5px;
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3, 2fr);
+            border: 2px solid olive;
+            gap: 10px;
+            /* padding: 8px; */
+            grid-template-areas:
+                ' item-1 item-1 item-1'
+                'item-2 item-3 item-3'
+                'item-4 item-3 item-3'
+                'item-4 item-5 item-5'
+                'item-6 item-6 item-7'
+                'item-8 item-8 item-8'
+            ;
+
+
+
+        }
+
+        .item-1 {
+            grid-area: item-1;
+            background-color: aqua;
+                
+        }
+
+        .item-2 {
+            grid-area: item-2;
+            background-color: plum;
+           
+        }
+
+        .item-3 {
+            grid-area: item-3;
+            background-color: orange;
+            
+        }
+
+        .item-4 {
+            grid-area: item-4;
+            background-color: olivedrab;
+        }
+
+        .item-5 {
+            grid-area: item-5;
+            background-color: grey;
+        }
+
+        .item-6 {
+            grid-area: item-6;
+            background-color: green;
+        }
+
+        .item-7 {
+            grid-area: item-7;
+            background-color: pink;
+           
+        }
+
+        .item-8 {
+            grid-area: item-8;
+            background-color: yellow;
+        }
+
+        body {
+            padding-top: 5px;
+        }
+
+        div {
+            background-color: whitesmoke;
+        }
+
+      
+
+        .item {
+
+            color: white;
+            font-size: 25px;
+
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+
+        <div class="item item-1">Header</div>
+        <div class="item item-2">Hero</div>
+        <div class="item item-3">Main contentnt</div>
+        <div class="item item-4">Sidebar</div>
+        <div class="item item-5">Extra content</div>
+        <div class="item item-6">related image</div>
+        <div class="item item-7">related post</div>
+        <div class="item item-8">Footer</div>
+
+    </div>
+</body>
+
+</html>
